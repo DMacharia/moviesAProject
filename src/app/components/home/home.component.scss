@@ -1,0 +1,14 @@
+.home-container{
+  display: flex;
+
+  .all-movies{
+    width: 75%;
+    border: solid 1px yellow;
+    min-height: calc(100vh - 80px);
+  }
+  .popular-movies{
+    width: 25%;
+    min-height: calc(100vh - 80px);
+
+  }
+}
