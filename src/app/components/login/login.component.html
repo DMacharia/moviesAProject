@@ -1,0 +1,49 @@
+<div>
+  <section>
+    <div class="intro">
+      <div class="introduction">
+        <h1>Welcome to <span>BlissFlix</span></h1>
+        <img class="film" src="assets/film.png" alt="film" />
+      </div>
+      <p class="introPar">
+        Welcome to BlissFlix, your ultimate destination for trusted
+        recommendations for movies! With our vast collection of films spanning
+        various genres, from action to romance, comedy to horror, we have
+        something for every movie lover out there!
+      </p>
+    </div>
+    <div class="formbox">
+      <div class="formvalue">
+        <form action="" ngNativeValidate>
+          <h2>Login</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" name="email" required [(ngModel)]="email" />
+            <label for="">Email</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input
+              type="password"
+              name="password"
+              required
+              [(ngModel)]="password"
+            />
+            <label for="">Password</label>
+          </div>
+          <div class="forget">
+            <label for=""
+              ><input type="checkbox" /> Remember Me
+              <a href="">Forget Password</a></label
+            >
+          </div>
+            <button (click)="login()">Log in</button>
+            <div class="error">{{errormssg}}</div>
+          <div class="register">
+            <p>Don't have an account? <a href="">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
