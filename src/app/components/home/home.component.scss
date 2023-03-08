@@ -1,14 +1,92 @@
-.home-container{
+.home-container {
   display: flex;
 
-  .all-movies{
+  .all-movies {
     width: 75%;
-    border: solid 1px yellow;
     min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid maroon;
+        padding-left: 10px;
+      }
+      .view-all {
+        color: maroon;
+        cursor: pointer;
+      }
+    }
+    .movie-thumbnail {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .movie {
+        .cover {
+          img {
+            border-radius: 5px;
+            height: 200px;
+            cursor: pointer;
+          }
+        }
+        .details {
+          width: 150px;
+          .name {
+            font-weight: bold;
+            height: 40px;
+            margin-top: 5px;
+            cursor: pointer;
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
-  .popular-movies{
+  .popular-movies {
     width: 25%;
     min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-left: 5px solid maroon;
+      padding-left: 10px;
+    }
+    .movies {
+      .movie {
+        margin-bottom: 10px;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-size: 14px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+      .view-all {
+        color: maroon;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: right;
+      }
+    }
+  }
+}
 
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 5px;
+    right: 21px;
+    font-weight: bold;
+    font-size: 11px;
   }
 }
