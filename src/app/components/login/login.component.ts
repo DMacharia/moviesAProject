@@ -23,7 +23,7 @@ export class LoginComponent {
 
     let res = this.auth.login(this.email, this.password);
     if (res === 200) {
-      this.router.navigate(['/home']);
+      this.router.navigate(['home']);
     } else if (res === 403) {
       this.errormssg = 'Invalid credentials'
     }
