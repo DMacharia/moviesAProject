@@ -19,6 +19,8 @@
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
     "@ionic/angular": "^6.6.0",
+    "@ng-bootstrap/ng-bootstrap": "^14.0.1",
+    "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "prettier": "^2.8.4",
     "rxjs": "~7.8.0",
@@ -29,6 +31,8 @@
     "@angular-devkit/build-angular": "^15.1.4",
     "@angular/cli": "~15.1.4",
     "@angular/compiler-cli": "^15.1.0",
+    "@angular/localize": "^15.1.0",
+    "@ionic/angular-toolkit": "latest",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
@@ -36,7 +40,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.9.4",
-    "@ionic/angular-toolkit": "latest"
+    "typescript": "~4.9.4"
   }
 }
