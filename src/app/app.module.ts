@@ -9,6 +9,9 @@ import { MovieComponent } from './components/movie/movie.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
+import { FeatureModule } from './feature/feature.module';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { IonicModule } from '@ionic/angular';
     AppRoutingModule,
     FormsModule,
     IonicModule.forRoot(),
+    HttpClientModule,
+    FeatureModule
   ],
   providers: [],
   bootstrap: [AppComponent],
